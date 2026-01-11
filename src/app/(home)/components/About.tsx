@@ -19,17 +19,19 @@ export const About = () => {
   
   return (
     
-    <motion.section className=" scroll-mt-28  relative overflow-hidden pt-16 sm:pt-20 md:pt-28"
+    <section className=" scroll-mt-28  relative overflow-hidden pt-16 sm:pt-20 md:pt-28"
     id="about"
-    custom={1}
-           variants={headingVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}>
+ >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       
-        <div className="text-center mb-14 flex flex-col items-center gap-4">
+        <motion.div
+         custom={1}
+           variants={headingVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+        className="text-center mb-14 flex flex-col items-center gap-4">
           <h2 className="text-3xl sm:text-4xl text-brand-black md:text-5xl font-semibold">
             About ThinkAI <span className="text-brand-blue">*</span>
           </h2>
@@ -37,8 +39,14 @@ export const About = () => {
             Transforming government challenges into meaningful learning opportunities
             for students across India.
           </p>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-start">
+        </motion.div>
+        <motion.div 
+            custom={1}
+           variants={headingVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+        className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-start">
 
       
           <div className="space-y-3">
@@ -88,7 +96,7 @@ export const About = () => {
               artificial intelligence.</CardDescription>
           </Card>
 
-        </div>
+        </motion.div>
       <div className="max-w-7xl mx-auto px-4 mt-16">
   <div className="bg-brand-blue rounded-2xl p-6 sm:p-10 md:p-16">
     <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-whitish">
@@ -108,6 +116,6 @@ export const About = () => {
 
 </div>
 </div>
-    </motion.section>
+    </section>
   )
 }
