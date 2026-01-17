@@ -42,7 +42,7 @@ export const Impact = () => {
         <p className="ml-2 text-lg">Solutions Submitted</p>
       </div>
             <div className="flex flex-col "> <span className="text-brand-blue ">8</span> 
-        <p className="ml-2 text-lg">solutions deployed</p>
+        <p className="ml-2 text-lg">Solutions Deployed</p>
       </div>
     
      </div>
